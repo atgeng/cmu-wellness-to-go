@@ -372,7 +372,7 @@ footer {
     display: block;
   }
   
-  .product-card-link:hover .product-card {
+  .product-card-link:hover, .product-card {
     transform: translateY(-5px);
     transition: transform 0.2s ease;
   }
