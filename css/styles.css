@@ -184,6 +184,7 @@ header {
     font-weight: 1000;
     width: 100%;
     border-style: none;
+    text-decoration: none;
   }
   
   .btn-filled:hover {
