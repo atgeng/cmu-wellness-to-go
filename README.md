@@ -8,5 +8,5 @@ The coded prototype contains the following completed pages:
 - External (Male) Condom Product Page
 - Machine Location Page
 
-As well as the following incomplet pages:
+As well as the following incomplete pages:
 - About Page
