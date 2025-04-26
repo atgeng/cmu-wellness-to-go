@@ -33,10 +33,10 @@
               <a href="index.html">Products</a> |
               <a href="about.html">About</a> |
               <a href="machine-location.html">Machine Location</a> |
-              <a href="privacy.html">Privacy</a> |
-              <a href="https://www.cmu.edu/health-services/">UHS Website</a> |
-              <a href="contact-us.html">Contact Us</a> |
-              <a href="faq.html">FAQ</a>
+              <a href="#">Privacy</a> |
+              <a href="https://www.cmu.edu/health-services/" target="_blank">UHS Website</a> |
+              <a href="#">Contact Us</a> |
+              <a href="#">FAQ</a>
             </nav>
         </header>
         <!-- Content start -->
@@ -56,25 +56,124 @@
                     <p class="product-desc">Advil is an over-the-counter medication that contains 200 mg of ibuprofen. It's commonly used to relieve pain from headaches, muscle aches and menstrual cramps, as well as to reduce fever. Advil works by reducing hormones that cause inflammation and discomfort, making it a reliable option for everyday pain relief.</p>
                     <p class="product-stock">In stock at:</p>
                     <div class="stock-tags">
+                      <a href="machine-location.html" class="stock-link">
                         <div class="stock-card-1">
                             Tepper
                             <br>
                             <span class="stock-remain">3 remaining</span>
                         </div>
+                        </a>
+                        <a href="machine-location.html" class="stock-link">
                         <div class="stock-card-2">
                             University Center
                             <br>
                             <span class="stock-remain">13 remaining</span>
                         </div>
+                        </a>
+                        <a href="machine-location.html" class="stock-link">
                         <div class="stock-card-0">
                             Highmark Center
                             <br>
                             <span class="stock-remain">Out of Stock</span>
                         </div>
+                        </a>
                       </div>
-                      <button class="notify-btn"><i class="bi bi-star me-1"></i>Notify me when product is back in stock</button>
+                      <button class="notify-btn" data-bs-toggle="modal" data-bs-target="#notifyModal">
+                        <i class="bi bi-star me-1"></i>Notify me when product is back in stock
+                      </button>                      
+                      <div class="ppl-wrapper">
+                        <img src="assets/mascot.png" class="mascot-ppl" alt="Wellness-To-Go Mascot" />
+                        <div class="ppl-indicator">
+                          <p class="ppl-text">
+                            <span class="num-ppl">19 </span> people bought it during the last week<br>
+                            <span class="num-ppl">85 </span> people bought it during the last month</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="modal fade" id="notifyModal" tabindex="-1" aria-labelledby="notifyModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="notifyModalLabel">Get Notified</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form id="notifyForm">
+                  <div class="mb-3">
+                    <label for="notifyEmail" class="form-label">Enter your email address:</label>
+                    <input type="email" class="form-control" id="notifyEmail" placeholder="you@andrew.cmu.edu" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100 email-btn">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product information -->
+        <div class="prod-info row g-5">
+          <!-- more information -->
+          <div class="col-6 more-info">
+              <h2>More Information</h2>
+              <br>
+              <h4>Price Comparison</h4>
+              <p>UHS vending machines offer the most affordable prices compared to CVS and other online retailers.</p>
+              <div class="price-compare">
+                <div class="price-cvs">
+                  <img src="assets/cvs-icon.png" class="non-uhs-price" alt="CVS Logo" />
+                  <p>CVS
+                  <br>$5.59 - $26.79</p>
+                </div>
+                <div class="price-uhs">
+                  <img src="assets/uhs-icon.svg" class="uhs-price" alt="Box icon" />
+                  <p>UHS
+                    <br>$4.00</p>
+                </div>
+                <div class="price-amz">
+                  <img src="assets/amazon-icon.png" class="non-uhs-price" alt="Amazon Logo" />
+                  <p>Amazon
+                  <br>$9.88</p>
+                </div>
+              </div>
+              <br>
+              <h4>Want to get more help?</h4>
+              <p>For additional support, you can visit the UHS Resources page or schedule an appointment with UHS to receive personalized guidance from a healthcare professional.</p>
+              <div class="add-resources">
+                <a href="https://www.cmu.edu/health-services/health-education-and-resources/index.html" target="_blank"><div class="resource-cards">
+                  <img src="assets/resource-bg.png" class="resource-card" alt="Health background" />
+                  <p class="resource-text">Resources</p>
+                </div>
+                </a>
+                <a href="https://healthservices.andrew.cmu.edu/confirm.aspx" target="_blank"><div class="resource-cards">
+                  <img src="assets/health-connect-bg.png" class="resource-card" alt="Health background" />
+                  <p class="resource-text">HealthConnect</p>
+                </div>
+                </a>
+              </div>
+          </div>
+          <!-- Product instructions -->
+          <div class="col-6 prod-instruct">
+              <h2>Product Instructions</h2>
+              <br>
+              <h4>Usage Directions</h4>
+              <ul>
+                <li><strong>Take 1 tablet every 4 to 6 hours</strong> as needed for pain or fever.</li>
+                <li>If pain persists, you may take 2 tablets. Do not exceed 6 tablets in 24 hours.</li>
+                <li>Take with food or milk to avoid stomach upset.</li>
+              </ul>
+              <h4>Allergy Warning</h4>
+              <ul>
+                <li>Aspirin or other NSAIDs</li>
+              </ul>
+              <h4>Other Language Instruction</h4>
+              <div class="language-buttons">
+                <a href="#" class="lang-link"><div class="lang-btn">Hindi</div></a>
+                <a href="#" class="lang-link"><div class="lang-btn">Chinese</div></a>
+              </div>
+              <br>
+              <img src="assets/advil-inst.png" class="inst-img" alt="Advil Instructions" />
+          </div>
         </div>
 
         <!-- footer -->
@@ -93,19 +192,14 @@
                   &copy; 2025 Carnegie Mellon University
                 </p>
                 <br>
-                <p>Designed by the CMU HCI Capstone Team 10, Spring 2025</p>
+                <p>Designed by the CMU HCI Capstone Team 10, Spring 2025
+                  <br>
+                  Team Members: Milan Minott, Alice Yu, Annie Geng, Yuyang Geng, Elly Young
+                </p>
               </div>
-              <!-- commented out, probably will not need -->
-              <!-- <div class="footer-social">
-                <a href=# target="_blank">
-                  <img src=# alt="Facebook" />
-                </a>
-                <a href=# target="_blank">
-                  <img src=# alt="Instagram" />
-                </a>
-              </div> -->
             </div>
           </div>
           </footer>
       </body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </html>
